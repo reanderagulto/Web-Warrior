@@ -9,4 +9,9 @@
  */
 module.exports = {
   plugins: [],
+  siteMetadata: {
+    title: 'Reander Agulto', 
+    description: 'Web Dev portfolio',
+    copyright: 'This website is copyright 2022 Web Warrior',
+  }
 }
