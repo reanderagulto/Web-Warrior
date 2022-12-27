@@ -5,7 +5,6 @@ import { portfolio, project } from '../../styles/projects.module.css';
 
 export default function Projects({ data }) {
 
-  console.log(data);
   const projects = data.allMarkdownRemark.nodes
 
   return (
@@ -31,7 +30,7 @@ export default function Projects({ data }) {
 // Export Page Query
 export const query = graphql`
 query Projects {
-  allMarkdownRemark {
+  allMarkdownRemark(sort: {frontmatter: {date: ASC}}) {
     nodes {
       frontmatter {
         title
